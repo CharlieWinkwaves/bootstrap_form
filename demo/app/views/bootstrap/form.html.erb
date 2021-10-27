@@ -2,6 +2,21 @@
 
 <%= form_with_source do %>
   <%= bootstrap_form_with model: @user, layout: :horizontal, local: true do |form| %>
+    <%= form.text_field :email, placeholder: "Enter Email", label: "Email address", help: "Email pressence true" %>
+    <%= form.text_field :email, placeholder: "Enter Email", label: "Email address", help: "Email pressence true with required false", required: false %>
+    <%= form.text_field :email, placeholder: "Enter Email", label: "Email address", help: "Email pressence true with skip required false", skip_required: false %>
+    <%= form.text_field :email, placeholder: "Enter Email", label: "Email address", help: "Email pressence true with skip required true", skip_required: true %>
+    <%= form.text_field :misc, placeholder: "Enter Misc", label: "Misc", help: "Misc not required by model" %>
+    <%= form.text_field :misc, placeholder: "Enter Misc", label: "Misc", help: "Misc not required by model with required true", required: true %>
+    <%= form.text_field :misc, placeholder: "Enter Misc", label: "Misc", help: "Misc not required by model with required false", required: false %>
+    <%= form.text_field :comments, required: true %>
+    <%= form.check_box :misc, switch: true %>
+    <%= form.submit %>
+  <% end %>
+<% end %>
+
+<%= form_with_source do %>
+  <%= bootstrap_form_with model: @user, layout: :horizontal, local: true do |form| %>
     <%= form.email_field :email, placeholder: "Enter Email", label: "Email address", help: "We'll never share your email with anyone else" %>
     <%= form.password_field :password, placeholder: "Password" %>
     <%= form.select :status, [['activated', 1], ['blocked', 2]], prompt: "Please Select" %>

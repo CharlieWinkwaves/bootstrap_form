@@ -21,7 +21,7 @@ class BootstrapFormTest < ActionView::TestCase
         <div class="mb-3 row">
           <label class="form-label col-form-label col-sm-2 required" for="user_email">Email</label>
           <div class="col-sm-10">
-            <input class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
+            <input aria-required="true" required="required" class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
           </div>
         </div>
         <div class="form-check">
@@ -73,7 +73,7 @@ class BootstrapFormTest < ActionView::TestCase
         #{'<input name="utf8" type="hidden" value="&#x2713;"/>' unless ::Rails::VERSION::STRING >= '6'}
         <div class="mb-3 col-auto g-3">
           <label class="form-label mr-sm-2 required" for="user_email">Email</label>
-          <input class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
+          <input aria-required="true" required="required" class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
         </div>
         <div class="form-check form-check-inline">
           <input #{'autocomplete="off"' if ::Rails::VERSION::STRING >= '7'}
@@ -136,7 +136,7 @@ class BootstrapFormTest < ActionView::TestCase
         #{'<input name="utf8" type="hidden" value="&#x2713;"/>' unless ::Rails::VERSION::STRING >= '6'}
         <div class="mb-3">
           <label class="form-label mr-sm-2 required" for="user_email">Email</label>
-          <input class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
+          <input aria-required="true" required="required" class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
         </div>
         <div class="form-check form-check-inline">
           <input #{'autocomplete="off"' if ::Rails::VERSION::STRING >= '7'}
@@ -183,7 +183,7 @@ class BootstrapFormTest < ActionView::TestCase
         <div class="mb-3 row">
           <label class="form-label col-form-label col-sm-2 required" for="user_email">Email</label>
           <div class="col-sm-10">
-            <input class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
+            <input aria-required="true" required="required" class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
           </div>
         </div>
         <div class="form-check">
@@ -234,7 +234,7 @@ class BootstrapFormTest < ActionView::TestCase
         #{'<input name="utf8" type="hidden" value="&#x2713;"/>' unless ::Rails::VERSION::STRING >= '6'}
         <div class="mb-3">
           <label class="form-label required" for="user_email">Email</label>
-          <input class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
+          <input aria-required="true" required="required" class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
         </div>
         <div class="form-check">
           <input #{'autocomplete="off"' if ::Rails::VERSION::STRING >= '7'}
@@ -281,7 +281,7 @@ class BootstrapFormTest < ActionView::TestCase
         #{'<input name="utf8" type="hidden" value="&#x2713;"/>' unless ::Rails::VERSION::STRING >= '6'}
         <div class="mb-3 col-auto g-3">
           <label class="form-label mr-sm-2 required" for="user_email">Email</label>
-          <input class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
+          <input aria-required="true" required="required" class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
         </div>
         <div class="form-check form-check-inline">
           <input #{'autocomplete="off"' if ::Rails::VERSION::STRING >= '7'}
@@ -329,7 +329,7 @@ class BootstrapFormTest < ActionView::TestCase
         <div class="mb-3 row">
           <label class="form-label col-form-label col-sm-2 required" for="user_email">Email</label>
           <div class="col-sm-10">
-            <input class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
+            <input aria-required="true" required="required" class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
           </div>
         </div>
       </form>
@@ -387,7 +387,7 @@ class BootstrapFormTest < ActionView::TestCase
         #{'<input name="utf8" type="hidden" value="&#x2713;"/>' unless ::Rails::VERSION::STRING >= '6'}
         <div class="mb-3">
           <label class="form-label required" for="ID">Email</label>
-          <input class="form-control" id="ID" name="NAME" type="text" value="steve@example.com" />
+          <input aria-required="true" required="required" class="form-control" id="ID" name="NAME" type="text" value="steve@example.com" />
         </div>
       </form>
     HTML
@@ -438,7 +438,7 @@ class BootstrapFormTest < ActionView::TestCase
         #{'<input name="utf8" type="hidden" value="&#x2713;"/>' unless ::Rails::VERSION::STRING >= '6'}
         <div class="mb-3">
           <label class="form-label required text-danger" for="user_email">Email can't be blank, is too short (minimum is 5 characters)</label>
-          <input class="form-control is-invalid" id="user_email" name="user[email]" type="text" />
+          <input aria-required="true" required="required" class="form-control is-invalid" id="user_email" name="user[email]" type="text" />
         </div>
       </form>
     HTML
@@ -454,7 +454,7 @@ class BootstrapFormTest < ActionView::TestCase
         #{'<input name="utf8" type="hidden" value="&#x2713;"/>' unless ::Rails::VERSION::STRING >= '6'}
         <div class="mb-3">
           <label class="form-label required text-danger" for="user_email">Email can&#39;t be blank, is too short (minimum is 5 characters)</label>
-          <input class="form-control is-invalid" id="user_email" name="user[email]" type="text" />
+          <input aria-required="true" required="required" class="form-control is-invalid" id="user_email" name="user[email]" type="text" />
           <div class="invalid-feedback">can't be blank, is too short (minimum is 5 characters)</span>
         </div>
       </form>
@@ -473,7 +473,7 @@ class BootstrapFormTest < ActionView::TestCase
         #{'<input name="utf8" type="hidden" value="&#x2713;"/>' unless ::Rails::VERSION::STRING >= '6'}
         <div class="mb-3">
           <label class="form-label required text-danger" for="user_email">Your e-mail address can&#39;t be blank, is too short (minimum is 5 characters)</label>
-          <input class="form-control is-invalid" id="user_email" name="user[email]" type="text" />
+          <input aria-required="true" required="required" class="form-control is-invalid" id="user_email" name="user[email]" type="text" />
           <div class="invalid-feedback">can't be blank, is too short (minimum is 5 characters)</div>
         </div>
       </form>
@@ -622,7 +622,7 @@ class BootstrapFormTest < ActionView::TestCase
         <div class="mb-3 row">
           <label class="form-label col-form-label col-sm-1 required" for="user_email">Email</label>
           <div class="col-sm-10">
-            <input class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
+            <input aria-required="true" required="required" class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
           </div>
         </div>
       </form>
@@ -670,7 +670,7 @@ class BootstrapFormTest < ActionView::TestCase
         <div class="mb-3 row">
           <label class="form-label col-form-label col-sm-2 required" for="user_email">Email</label>
           <div class="col-sm-5">
-            <input class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
+            <input aria-required="true" required="required" class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
           </div>
         </div>
       </form>
@@ -686,7 +686,7 @@ class BootstrapFormTest < ActionView::TestCase
         <div class="mb-3 row">
           <label class="form-label col-form-label col-sm-2 required" for="user_email">Email</label>
           <div class="col-sm-10 custom-class">
-            <input class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
+            <input aria-required="true" required="required" class="form-control" id="user_email" name="user[email]" type="email" value="steve@example.com" />
           </div>
         </div>
       </form>
@@ -709,7 +709,7 @@ class BootstrapFormTest < ActionView::TestCase
         #{'<input name="utf8" type="hidden" value="&#x2713;"/>' unless ::Rails::VERSION::STRING >= '6'}
         <div class="mb-3">
           <label class="form-label required" for="user_email">Email</label>
-          <input class="form-control is-invalid" id="user_email" name="user[email]" type="text" />
+          <input aria-required="true" required="required" class="form-control is-invalid" id="user_email" name="user[email]" type="text" />
           <div class="invalid-feedback">can't be blank, is too short (minimum is 5 characters)</div>
         </div>
       </form>
@@ -733,7 +733,7 @@ class BootstrapFormTest < ActionView::TestCase
             <label class="form-label required" for="user_email">Email</label>
           </div>
           <div class="field_with_errors">
-            <input class="form-control is-invalid" id="user_email" name="user[email]" type="text" />
+            <input aria-required="true" required="required" class="form-control is-invalid" id="user_email" name="user[email]" type="text" />
           </div>
           <div class="invalid-feedback">can't be blank, is too short (minimum is 5 characters)</span>
         </div>
@@ -755,7 +755,7 @@ class BootstrapFormTest < ActionView::TestCase
         #{'<input name="utf8" type="hidden" value="&#x2713;"/>' unless ::Rails::VERSION::STRING >= '6'}
         <div class="mb-3">
           <label class="form-label required" for="user_email">Email</label>
-          <input class="form-control is-invalid" id="user_email" name="user[email]" type="text" />
+          <input aria-required="true" required="required" class="form-control is-invalid" id="user_email" name="user[email]" type="text" />
           <small class="form-text text-muted">This is required</small>
         </div>
       </form>
@@ -775,7 +775,7 @@ class BootstrapFormTest < ActionView::TestCase
         #{'<input name="utf8" type="hidden" value="&#x2713;"/>' unless ::Rails::VERSION::STRING >= '6'}
         <div class="mb-3">
           <label class="form-label required" for="user_email">Email</label>
-          <input class="form-control" id="user_email" name="user[email]" type="text" value="steve@example.com" />
+          <input aria-required="true" required="required" class="form-control" id="user_email" name="user[email]" type="text" value="steve@example.com" />
           <small class="form-text text-muted">This is <strong>useful</strong> help</small>
         </div>
       </form>
